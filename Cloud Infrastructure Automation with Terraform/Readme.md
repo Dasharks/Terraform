@@ -4,6 +4,8 @@
 This Terraform project orchestrates the deployment and configuration of a scalable and secure cloud infrastructure on AWS. The project includes modules for creating a Virtual Private Cloud (VPC), defining security groups, setting up a load balancer, and implementing auto-scaling configurations. Leveraging Terraform's infrastructure-as-code capabilities, this project streamlines the provisioning process, ensuring a reliable and efficient foundation for your applications. Customize parameters such as project name, CIDR blocks, and instance types to tailor the infrastructure to your specific requirements. Embrace automation and enhance the agility of your cloud deployment with this Terraform project.
 
 ### *project-root-directory/*
+```
+project-root-directory/
 │
 ├── module/
 │   ├── VPC/
@@ -31,6 +33,8 @@ This Terraform project orchestrates the deployment and configuration of a scalab
 ├── outputs.tf
 ├── terraform.tfvars
 └── README.md
+
+```
 
 - project-root-directory: This is the main directory for your Terraform project.
 - module/: Directory containing submodules for different components.
