@@ -1,5 +1,5 @@
 # Terraform
-### *Documentation:* 
+## Documentation
 
 For detailed documentation on how to use Terraform, please refer to the [official Terraform documentation](https://www.terraform.io/docs/index.html){:target="_blank"}.
 
