@@ -1,5 +1,7 @@
 # Cloud Infrastructure Automation with Terraform
 
+### **NOTE: In this project, we have not included the .gitignore file. Therefore, some files such as .tfvars, .tfstate, etc., are restricted from being pushed to GitHub. Please exercise caution and refrain from including the following files in your GitHub repository.**
+
 ### *Description:*
 This Terraform project orchestrates the deployment and configuration of a scalable and secure cloud infrastructure on AWS. The project includes modules for creating a Virtual Private Cloud (VPC), defining security groups, setting up a load balancer, and implementing auto-scaling configurations. Leveraging Terraform's infrastructure-as-code capabilities, this project streamlines the provisioning process, ensuring a reliable and efficient foundation for your applications. Customize parameters such as project name, CIDR blocks, and instance types to tailor the infrastructure to your specific requirements. Embrace automation and enhance the agility of your cloud deployment with this Terraform project.
 
@@ -56,3 +58,4 @@ project-root-directory/
 - outputs.tf: File containing output values for the main configuration and modules.
 
 - terraform.tfvars: File for storing variable values. (Should be kept secret and not committed to version control.)
+  
