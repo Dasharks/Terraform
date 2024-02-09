@@ -5,6 +5,9 @@
 ### *Description:*
 This Terraform project orchestrates the deployment and configuration of a scalable and secure cloud infrastructure on AWS. The project includes modules for creating a Virtual Private Cloud (VPC), defining security groups, setting up a load balancer, and implementing auto-scaling configurations. Leveraging Terraform's infrastructure-as-code capabilities, this project streamlines the provisioning process, ensuring a reliable and efficient foundation for your applications. Customize parameters such as project name, CIDR blocks, and instance types to tailor the infrastructure to your specific requirements. Embrace automation and enhance the agility of your cloud deployment with this Terraform project.
 
+   ![image](https://github.com/Dasharks/Terraform/assets/159520477/9ae14e9b-4c6d-4a96-ad5d-8ef63e4a58b7)
+
+
 ### *project-root-directory/*
 ```
 project-root-directory/
