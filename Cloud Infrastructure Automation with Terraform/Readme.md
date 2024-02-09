@@ -58,4 +58,22 @@ project-root-directory/
 - outputs.tf: File containing output values for the main configuration and modules.
 
 - terraform.tfvars: File for storing variable values. (Should be kept secret and not committed to version control.)
+
+### *How to create AMI ?* 
+- Create an EC2 instance with any AMI. Either Login to the server and install the HTTPD package or install the package using user data while creating the server
+```
+#!/bin/bash
+yum install httpd -y
+service httpd start
+chkconfig httpd on
+echo "autoscaling" >/var/www/html/index.html
+```
+- Confirm HTTP is installed properly.
+- Now Select your EC2 instance
+- Under **Actions**  Click on **Image and Templates** under that click on **Create Images**
+![Screenshot 2024-02-09 204059](https://github.com/Dasharks/Terraform/assets/159520477/e1668f35-7bc6-4037-9767-322761736032)
+- Add name and description
+![Screenshot 2024-02-09 204322](https://github.com/Dasharks/Terraform/assets/159520477/543a9115-e7d6-4cf7-bd92-3f09389a0c27)
+- Click on Create Image.
+- Now custom AMI is created.
   
