@@ -64,8 +64,8 @@ project-root-directory/
 ```
 #!/bin/bash
 yum install httpd -y
-service httpd start
-chkconfig httpd on
+systemctl start httpd
+systemctl enable httpd
 echo "autoscaling" >/var/www/html/index.html
 ```
 - Confirm HTTP is installed properly.
@@ -76,4 +76,35 @@ echo "autoscaling" >/var/www/html/index.html
 ![Screenshot 2024-02-09 204322](https://github.com/Dasharks/Terraform/assets/159520477/543a9115-e7d6-4cf7-bd92-3f09389a0c27)
 - Click on Create Image.
 - Now custom AMI is created.
-  
+
+### *How to create DynamoDB table*
+
+- Search for DynamoDB in AWS console and open DynamoDB.
+- Click on Create a table
+- Add Table name
+- Partition key must be **String** and it should be **LockID**
+![Screenshot 2024-02-09 204850](https://github.com/Dasharks/Terraform/assets/159520477/feb395f8-189c-49f5-8982-d383684c4f5d)
+- Click on Create Table.
+
+### *.gitignore file contents*
+```
+
+/**/*.tfstate*
+/**/.terraform
+
+../modules/key/client_key
+../modules/key/client_key.pub
+# Local .terraform directories
+**/.terraform/*
+.terraform/*
+*.hcl
+*.lock*
+../.terraform/*
+terraform.*
+*.tfvars*
+
+# .tfstate files
+*.tfstate
+/**/*.tfstate*
+*.tfstate.*
+```
