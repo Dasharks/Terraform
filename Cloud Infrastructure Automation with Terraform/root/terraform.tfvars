@@ -33,4 +33,4 @@ lb_protcol      = "HTTP"
 lb_port         = 80
 
 # Specify the Amazon Machine Image (AMI) ID for the instances.
-ami_id          = "Please add your cousom-AMI Image ID"
+ami_id          = "Please add your custom-AMI Image ID"
