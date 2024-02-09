@@ -66,10 +66,10 @@ project-root-directory/
 - Create an EC2 instance with any AMI. Either Login to the server and install the HTTPD package or install the package using user data while creating the server
 ```
 #!/bin/bash
-yum install httpd -y
-systemctl start httpd
-systemctl enable httpd
-echo "autoscaling" >/var/www/html/index.html
+sudo yum install httpd -y
+sudo systemctl start httpd
+sudo systemctl enable httpd
+sudo echo "autoscaling" >/var/www/html/index.html
 ```
 - Confirm HTTP is installed properly.
 - Now Select your EC2 instance
